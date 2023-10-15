@@ -1,42 +1,64 @@
 @import "_reset";
 
-*{
+* {
   box-sizing: border-box;
 }
-button{ 
+button {
   cursor: pointer;
   border: none;
   background-color: inherit;
 }
 
-img{
+img {
   width: 100%;
   scale: 100%;
 }
 
 body {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-header{
-  position:fixed;
+header {
+  position: fixed;
   top: 0;
   right: 0;
   z-index: 1;
   width: 100%;
   background-color: #ffff;
-  .header__nav{
+  .header__nav {
+    position: relative;
     display: flex;
     align-items: center;
-    height: 15vh;
+    height: 150px;
     button {
+      position: relative;
+      z-index: 99;
       margin: 0px 20px;
     }
     .text {
+      position: relative;
+      z-index: 99;
       display: inline-flex;
       width: 100%;
       font-size: 50px;
       justify-content: space-between;
       margin-right: 30px;
+    }
+    .menu__list {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 150px 50px;
+      font-size: 30px;
+      background-color: gray;
+      width: 500px;
+      height: 100vh;
+      transform: translateX(-100%);
+      transition: ease-in-out 0.8s;
+      ul {
+        li {
+          margin-bottom: 20px;
+        }
+      }
     }
   }
 }
@@ -47,52 +69,48 @@ main {
   align-items: center;
   word-spacing: 2px;
   padding-top: 150px;
-  
+
   .image {
     text-align: center;
     width: 70%;
   }
-  h1{
+  h1 {
     margin: 20px 0px;
   }
-  .introduce_box{
-    width: 33%; 
+  .introduce_box {
+    width: 33%;
     margin-bottom: 40px;
   }
- 
 }
 
 .photoJournal {
   width: 70%;
-  .photoJournal_area{
+  .photoJournal_area {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    padding:20px 0px;
-    border-top: 1px solid rgba(0,0,0,0.4);
+    padding: 20px 0px;
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
     &:nth-child(2) div,
-    &:nth-child(4) 
-    div{
-      order:1;
+    &:nth-child(4) div {
+      order: 1;
     }
-    .photoJournal__text{
+    .photoJournal__text {
       width: 80%;
-      *{
+      * {
         margin-bottom: 50px;
       }
-      h1{
+      h1 {
         font-size: 40px;
-      } 
+      }
       button {
-        border: 1px solid rgba(0,0,0,0.5);
+        border: 1px solid rgba(0, 0, 0, 0.5);
         border-radius: 25px;
         padding: 8px 25px;
       }
     }
   }
 }
-
-
 
 footer {
   width: 100%;
@@ -102,7 +120,7 @@ footer {
   padding: 20px 150px;
   display: flex;
   justify-content: space-between;
-  span{
+  span {
     margin: 0;
   }
   .footer_nav {
@@ -111,7 +129,7 @@ footer {
       font-size: 30px;
       margin-bottom: 60px;
     }
-    *{
+    * {
       display: flex;
       flex-direction: column;
       line-height: 25px;
