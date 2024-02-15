@@ -9,13 +9,13 @@
   "type": "module",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.23.2",
-    "@babel/preset-env": "^7.23.2",
-    "@babel/register": "^7.22.15",
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "@babel/register": "^7.23.7",
     "del": "^7.1.0",
-    "gh-pages": "^6.0.0",
+    "gh-pages": "^6.1.1",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^8.0.0",
+    "gulp-autoprefixer": "^9.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^4.0.1",
     "node-sass": "^9.0.0",
@@ -23,9 +23,9 @@
     "gulp-replace": "^1.1.4",
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
-    "gulp-imagemin": "^8.0.0"
+    "gulp-imagemin": "^9.0.0"
   },
   "dependencies": {
-    "sass": "^1.69.3"
+    "sass": "^1.70.0"
   }
 }
